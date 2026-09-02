@@ -4,6 +4,8 @@ server/
 dist/
 config.json
 show_users.py
+tools/
+last_tg_post.json
 *.bat
 *.ico
 .env
