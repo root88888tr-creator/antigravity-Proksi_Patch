@@ -1,0 +1,34 @@
+# Исходный код и служебные скрипты (скрыты из репозитория)
+installer/
+server/
+dist/
+*.zip
+config.json
+show_users.py
+tools/
+last_tg_post.json
+*.bat
+*.ico
+.env
+
+# Python кэш и временные файлы
+__pycache__/
+build/
+*.py
+*.spec
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Sensitive Master Passports & Internal Agent Memory
+*PASSPORT*
+*passport*
+*SECRET*
+*secret*
+*.key
+*.token
+PROJECT_MEMORY.md
+AGENTS.md
+GEMINI.md
+topics.json
