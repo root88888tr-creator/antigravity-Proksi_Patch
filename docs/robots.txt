@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://root88888tr-creator.github.io/sitemap.xml
