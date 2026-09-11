@@ -11,6 +11,9 @@ last_tg_post.json
 *.ico
 .env
 
+# Готовые бинарники — хранятся в GitHub Releases, не в git
+Proksi_Patch_Setup.exe
+
 # Python кэш и временные файлы
 __pycache__/
 build/
