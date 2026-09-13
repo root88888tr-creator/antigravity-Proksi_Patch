@@ -68,22 +68,33 @@ graph LR
 
 ---
 
-### Ошибки
+### Решение частых ошибок (Troubleshooting)
 
-*При ошибке «There was an unexpected issue setting up your account»:
-Пройти проверку возраста Google Age Verification.
-При ошибке «User location is not supported (400)»:
-Не ставить специальные DNS для всей системы (иначе ломаются российские сайты).
-Настроить Split DNS через Windows NRPT исключительно на домены:
-daily-cloudcode-pa.googleapis.com
-generativelanguage.googleapis.com
-*При ошибке «Agent execution terminated due to error» после обновления:
-Закрыть все процессы (antigravity.exe, language_server.exe, agy.exe).
-Не накатывать несколько разных анлокеров поверх друг друга.
-Если файлы повреждены — выполнить чистую переустановку с очисткой папок:
-%LocalAppData%\Programs\Antigravity
-%AppData%\Antigravity
-%UserProfile%\.antigravity-ide
+#### 1. «There was an unexpected issue setting up your account»
+* **Причина:** Требуется подтверждение совершеннолетия учетной записи Google.
+* **Решение:** Пройдите официальную проверку возраста по ссылке: [Google Age Verification](https://myaccount.google.com/age-verification).
+
+#### 2. «User location is not supported (400)»
+* **Причина:** Утечка DNS или некорректная глобальная маршрутизация доменов API.
+* **Решение:**
+  * **Не устанавливайте** кастомные зарубежные DNS на весь сетевой адаптер Windows (иначе перестанут работать российские сайты, банки и Госуслуги).
+  * Настройте **Split DNS** через Windows NRPT исключительно на целевые домены:
+    ```text
+    daily-cloudcode-pa.googleapis.com
+    generativelanguage.googleapis.com
+    ```
+
+#### 3. «Agent execution terminated due to error» (после обновления)
+* **Причина:** Зависли фоновые процессы либо возник конфликт сторонних патчей / анлокеров.
+* **Решение:**
+  1. Завершите все зависшие процессы через Диспетчер задач: `antigravity.exe`, `language_server.exe`, `agy.exe`.
+  2. Не накатывайте несколько разных анлокеров поверх друг друга во избежание повреждения файлов.
+  3. Если файлы среды повреждены — выполните чистую переустановку, предварительно удалив папки:
+     ```cmd
+     %LocalAppData%\Programs\Antigravity
+     %AppData%\Antigravity
+     %UserProfile%\.antigravity-ide
+     ```
 
 ---
 
