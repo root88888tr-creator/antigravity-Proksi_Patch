@@ -70,14 +70,14 @@ graph LR
 
 ### Ошибки
 
-При ошибке «There was an unexpected issue setting up your account»:
+*При ошибке «There was an unexpected issue setting up your account»:
 Пройти проверку возраста Google Age Verification.
 При ошибке «User location is not supported (400)»:
 Не ставить специальные DNS для всей системы (иначе ломаются российские сайты).
 Настроить Split DNS через Windows NRPT исключительно на домены:
 daily-cloudcode-pa.googleapis.com
 generativelanguage.googleapis.com
-При ошибке «Agent execution terminated due to error» после обновления:
+*При ошибке «Agent execution terminated due to error» после обновления:
 Закрыть все процессы (antigravity.exe, language_server.exe, agy.exe).
 Не накатывать несколько разных анлокеров поверх друг друга.
 Если файлы повреждены — выполнить чистую переустановку с очисткой папок:
