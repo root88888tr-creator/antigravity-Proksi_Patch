@@ -4,7 +4,7 @@
 
 # ProksiFi (antigravity-Proksi_Patch)
 
-**Легковесный клиент маршрутизации и шлюз для Google Antigravity, YouTube и Discord на Windows.**
+**Легковесный клиент маршрутизации и шлюз для Google Antigravity, YouTube и Telegram на Windows.**
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6?logo=windows&logoColor=white)](https://github.com/root88888tr-creator/antigravity-Proksi_Patch)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-@antigravity__proxy-2CA5E0?logo=telegram&logoColor=white)](https://t.me/antigravity_proxy)
@@ -21,7 +21,7 @@
 
 * **Google Antigravity & AI Models (Gemini, Claude Sonnet 4.6, Claude 3.7):** прямое подключение к европейскому шлюзу (Франкфурт 🇩🇪), стабильная работа без региональных блокировок и ошибок генерации.
 * **YouTube 4K без буферизации:** автоматическая фильтрация QUIC (UDP 443) с мгновенным переключением на TCP TLS 1.3 в туннеле.
-* **Discord & Telegram:** надежная маршрутизация голосовых шлюзов, медиа-серверов и чатов в обход локальных сетевых ограничений.
+* **Telegram:** надежная маршрутизация медиа-серверов и чатов в обход локальных сетевых ограничений.
 * **Fail-Safe защита сети при перезагрузке:** интеллектуальный агент трея ожидает инициализацию сетевых интерфейсов до 15 секунд. Если ядро не запущено — системный прокси автоматически деактивируется, гарантируя, что интернет на ПК никогда не пропадёт.
 * **Аппаратная привязка без дублирования ключей:** стабильная идентификация устройства (Hardware UUID) сохраняет ваш профиль при любых переустановках и обновлениях.
 * **Zero Anti-Cheat Conflicts:** не используются драйверы уровня ядра (`wintun.sys` / `WinDivert.sys`). Античиты игр (BattlEye, EasyAntiCheat, Vanguard, VAC) работают в штатном режиме без перехвата пакетов.
@@ -34,7 +34,7 @@
 
 ```mermaid
 graph LR
-    User[Клиент Windows] -->|Antigravity / Google AI / YouTube / Discord| Gateway[Шлюз Франкфурт 🇩🇪]
+    User[Клиент Windows] -->|Antigravity / Google AI / YouTube / Telegram| Gateway[Шлюз Франкфурт 🇩🇪]
     Gateway --> Internet[Целевые сервисы]
     
     User -->|Steam / Игры / Банки / Сайты РФ| Direct[Прямой домашний канал]
